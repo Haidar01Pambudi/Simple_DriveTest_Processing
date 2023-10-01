@@ -1,14 +1,14 @@
 clc
 % Initialization to open csv file
-Myname = 'E:\My Researches\Activities\Project UAV\Hasil Pengukuran\Data_RSSI.csv';  % location the my csv data
+Myname = 'E:\...\...\...\...\Data_RSSI.csv';  % location the my csv data
 delimiter = ';';  % Set delimiter in data
 
 % read data csv with readtable() function
-data = readtable(filename, 'Delimiter', delimiter);
-head(data);
+Data = readtable(Myname, 'Delimiter', delimiter);
+head(Data);
 
-Y = data.Index;
-X = data.RSSI;
+Y = Data.Index;
+X = Data.RSSI;
 
 % Create a figure
 figure;
